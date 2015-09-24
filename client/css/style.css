@@ -1,0 +1,52 @@
+body {
+    text-align: center;
+}
+
+h1 {
+    color: hsl(349, 100%, 45%);
+}
+
+input {
+    text-align: center;
+    width: 300px;
+}
+
+.p-after-input {
+    margin-top: 8px;
+}
+
+.btn {
+    margin-bottom: 10px;
+}
+.btn:focus {
+    color: white;
+    outline: none;
+}
+.btn:disabled {
+    background-color: darkgrey;
+    color: grey;
+    cursor: auto;
+}
+.btn:enabled {
+    color: white;
+    background-color: hsl(148, 100%, 26%);
+}
+.btn:enabled:hover {
+    color: white;
+    background-color: hsl(148, 100%, 21%);
+}
+.btn:enabled:active {
+    color: white;
+    outline: none;
+    background-color: hsl(148, 100%, 16%);
+}
+
+.btn-do:enabled {
+    background-color: hsl(349, 100%, 45%);
+}
+.btn-do:enabled:hover {
+    background-color: hsl(349, 100%, 40%);
+}
+.btn-do:enabled:active {
+    background-color: hsl(349, 100%, 35%);
+}

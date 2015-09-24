@@ -1,0 +1,10 @@
+{
+  "name": "URL-Compressor-App",
+  "version": "0.0.1",
+  "dependencies": {
+    "angular": "latest",
+    "angular-route": "latest",
+    "angular-animate": "latest",
+    "angular-bootstrap": "latest"
+  }
+}

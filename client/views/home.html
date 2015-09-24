@@ -1,0 +1,28 @@
+<div>
+    <alert ng-repeat="alert in alerts" type="{{alert.type}}" close="closeAlert($index)">{{alert.msg}}</alert>
+    <h1>Hi!</h1>
+
+    <h2>To compress URL</h2>
+    <p>first</p>
+    <button type="button" class="btn" ng-click="clearAll()">clear fields</button><br>
+    <p>then put</p>
+    <input type="text" ng-model="longURL" ng-change="clearCompressedURL()" placeholder="long URL" id="ng-longURL"/><br>
+    <br>
+    <button type="button" class="btn btn-do" ng-click="do()" ng-disabled="disabled_do()" id="ng-do">Do!</button>
+    <p>and get</p>
+    <input type="text" ng-model="compressedURL" ng-change="clearCompressedURL()" placeholder="compressed URL." id="ng-shortURL"/><br>
+    <br>
+</div>
+
+<div ng-show="show_delete_div()">
+    <h2>To delete compressed URL</h2>
+    <input type="text" ng-model="email" placeholder="type your email here" id="ng-email"/><br>
+    <p class="p-after-input">and</p>
+    <button type="button" class="btn" ng-click="send()" ng-disabled="disabled_send()">send me letter</button><br>
+    <p>with link to deactivate compressed URL in the future</p>
+    <p>or</p>
+    <button type="button" class="btn" ng-click="destroy()" ng-disabled="disabled_destroy()" id="ng-destroy">destroy it</button><br>
+    <p>right now.</p>
+
+    <h1>Happy compressing!</h1>
+</div>
